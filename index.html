@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* @font-face {
+    			font-family: PannaCotta;
+    			src: url("./assets/Cotta.otf") format("opentype");
+			}
+        body{
+            font-family: PannaCotta;
+        } */
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                iste_color: '#1a237e',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <h1>ISTE SquareOne Leaderboard</h1>
+    <div class="lg:p-10 flex flex-col justify-center items-center">
+        <div class="flex flex-col md:flex-row justify-evenly items-center">
+            <img src="./assets/logo.png" alt="logo" class="md:h-40 md:w-40 h-32 w-32"/>
+            <h1 class="lg:text-7xl text-iste_color">ISTE Square One Leaderboard</h1>
+
+        </div>
+        <p class="lg:text-xl sm:text-lg text-sm p-5 opacity-60">Winners, runners-up and second runners-up get 100, 80 and 50 points each in every event, and every task you finish gives you 80 points more! Search below to see how you did!</p>
+    
+    </div>
+    <div class="lg:p-10 p-5">
     <script src="https://sheetdb.io/s/t/0zxahfzd26kud.js"></script>
+    </div>
 </body>
 </html>
